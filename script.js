@@ -4,7 +4,7 @@ var tem=fetch("https://restcountries.com/v3.1/all");
      for (var i=0;i<data1.length;i++){
      row.append( final(data1[i].name.common,data1[i].flags.png,data1[i].capital,data1[i].region,data1[i].fifa));
      }
- }).catch((error)=>alert(error))
+ }).catch((error)=>console.log(error))
 
 
  let box = element("div","box");
